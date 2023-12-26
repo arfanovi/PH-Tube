@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Grid Example</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 p-8">
+ 
+
+    <section class="">
+        <nav class="bg-slate-100 p-4">
+            <div class="container">
+                <div class="text-white font-bold text-xl space-x-2">
+                    <a href="/index.html" class="flex items-center">
+                       <img src="Logo.png" alt="" srcset="">
+                    </a>
+                </div>
+               
+             
+            </div>
+        </nav>    
+    </section>
+
+    <header class="bg-neutral-300 text-black p-4  text-center">
+        <div class="container mx-auto">
+            <!-- Header Title -->
+            <h1 class="text-2xl font-semibold">Some Programming Concept</h1>
+        </div>
+    </header>
+ 
+    <section class="container mx-auto py-8 bg-gray-300">
+        <div>
+            <h2 class="text-xl text-center font-semibold mb-2">VAR CONST AND LET </h2>
+        </div>
+    
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+               <!-- Card 1 -->        
+                <div>
+                
+                    <h2 class="text-2xl font-bold ">VAR</h2>
+                    <p class="text-gray-600">VAR : is an old method to declare a variable.
+                        Use 'var' to signal untouched legacy code.
+                    </p>
+                    <p class="p-4 text-center font-bold">Syntax  <br></p>
+                   
+                        <p class="var-syntax text-center font-bold "> 
+                            <span>
+                                var name = "John Doe"; <br>
+                            var age = 30; <br>
+                            var isMarried = true; <br>
+                            var address = { <br>
+                              street: "123 Main  <br> Street", <br>
+                              city: "Anytown", <br>
+                              state: "CA"
+                            }; 
+                            </span>
+                        </p>
+                </div>
+            
+                <div class="px-4">
+                    <h2 class="text-2xl font-bold">LET</h2>
+                    <p>Let is a block level variable. Let allows you to declare variable that are limited in scop to the block, statement or expresstion.Let doesn't allow duplicate varible</p>
+                    <p class="p-4 text-center font-bold">Syntax  <br></p>        
+                        <p class="var-syntax text-center font-bold "> 
+                            <span>
+                                function example() {
+                                    <br>
+                                    let x = 10;
+                                    <br>
+                                    if (true) {
+                                        <br>
+                                        let x = 20; // This creates a new 'x' in a different scope
+                                        <br>
+                                    } <br> Street", <br>
+                                    console.log(x); // Outputs 10
+                                    <br>
+                                }   
+                            </span>
+                        </p>
+                </div>
+    
+                <div>
+                    <h2 class="text-2xl font-bold">CONST</h2>
+                    <p> Constants are block level scope variables. The scope may either global or local scope.  Constants are working like variables defined using let statement.We can't modify value of constants. Constants re-declarations are not allowed.</p>
+                    <p class="p-4 text-center font-bold">Syntax  <br></p>
+                   
+                        <p class="var-syntax text-center font-bold "> 
+                            <span>
+                                const PI = 3.14159;
+        
+                                    <br>
+                                    PI = 3; // This will result in an error because you can't reassign a constant variable
+        
+                                    <br>
+                                    const person = { name: 'John' };
+        
+                                        <br>
+                                        person.name = 'Jane'; <br> // This is allowed, as we are modifying the property, not reassigning the whole object     
+                            </span>
+                        </p>
+                </div>        
+                
+       </div>
+    </section>
+
+
+
+
+
+    <section>
+
+
+        <div class="bg-blue-500 text-white py-8">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl font-semibold mb-4">Javascript NULL and UNDEFINED</h1>
+                
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <!-- Card 1 -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold mb-2">Null</h2>
+                    <p class="text-gray-600">
+                        Null is a value that represents the intentional absence of any object value. It's often used to indicate that a variable should have no value or that a value doesn't exist yet.</p>
+                    <p class="text-gray-600">Use null when you want to explicitly set a variable to have no value. <br> <br>
+                        Null is used to indicate that something is intentionally empty or non-existent. 
+                        <br> <br>
+                       <span class="font-bold"> Example:</span> let variableName = null;
+
+                    </p>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold mb-2">Undefined</h2>
+                    <p class="text-gray-600">Undefined is a value that represents the absence of a value in a variable. It typically indicates that a variable has been declared but hasn't been assigned a value.</p> <br>
+                    <p class="text-gray-600">Undefined is often automatically assigned to variables that have been declared but not initialized, or when trying to access a non-existent property of an object. <br> <br>
+                        Undefined is often the result of variables that haven't been initialized or accessed improperly.
+                        <br> <br>
+                        <span class="font-bold"> Example:</span>let variableName;
+
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="bg-blue-500 text-white py-8">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl font-semibold mb-4">What is a REST API?</h1>
+                
+            </div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-2">REST API</h2>
+            <p class="text-gray-600">
+                REST API stands for Representational State Transfer Application Programming Interface. It is an architectural style for designing web services. REST APIs use HTTP methods to perform operations on resources.</p>
+        </div>
+       <div>
+        <div class="bg-white p-4 rounded-lg shadow-md">Representational State Transfer (REST) is an architectural style for designing distributed hypermedia systems. It defines a set of constraints that systems must adhere to in order to be considered RESTful.</div>
+        <div class="bg-white p-4 rounded-lg shadow-md">Application Programming Interface (API) is a set of rules that define how two software applications can interact with each other.</div>
+        <div class="bg-white p-4 rounded-lg shadow-md">HTTP methods are the verbs used in HTTP requests. The most common HTTP methods for REST APIs are GET, POST, PUT, and DELETE.
+
+
+            <img class="ml-20 px-20 py-4 h-64" src="Slide4 (1).PNG" alt="">
+        </div>
+      
+       </div>
+      
+       
+    </section>
+</body>
+</html>
