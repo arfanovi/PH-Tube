@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>PH Tube</title>
+</head>
+<body class="bg-slate-100">
+    <header>
+        <section class="">
+            <nav class="bg-slate-100 p-4">
+                <div class="container  flex justify-between items-center">
+                    <div class="text-white font-bold text-xl space-x-2">
+                        <a href="index.html" class="flex items-center">
+                           <img src="img/Logo.png" alt="" srcset="">
+                        </a>
+                    </div>
+                   
+                   <div>
+                    <button class="bg-gray-700 text-blue-100 hover:bg-black text-sm px-4 py-2 rounded-full shadow-md ml-2">
+                        Sort By View
+                    </button>
+                   </div>
+                   
+                    <div>
+                        <a href="blog/index.html" class="text-black font-bold hover:text-gray-300 text-2xl ml-2">Blog</a>
+                    </div>
+                </div>
+            </nav>    
+        </section>
+    </header>
+
+    <hr class="m-4 mt-8 h-px  my-8 bg-gray-100 border-0 dark:bg-gray-700">
+
+    <main class="container mx-auto mt-8">
+        <section>
+            <div class="button grid lg:grid-cols-4 items-center justify-center">
+                <button class="bg-blue-500 text-white py-2 rounded-md" category="1000">All</button>
+                <button class="bg-red-500 text-white py-2 px-4 rounded-md" category="1001">Music</button>
+                <button class="bg-green-500 text-white py-2 px-4 rounded-md" category="1003">Comedy</button>
+                <button id="draw" class="bg-yellow-500 text-white py-2 rounded-md" category="1005" >Drawing</button>
+              </div>        
+        </section>
+
+        <section class="bg-slate-100 p-4 m-4">
+            <div id="heroTube-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">      
+            </div>
+        </section>
+    </main>
+
+
+    <footer >
+        <div class="bg-slate-100 text-center text-2xl">
+            <p class="mt-6  ">&copy; 2023 <span class="text-y text-yellow-600">PHTube</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
